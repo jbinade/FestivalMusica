@@ -49,7 +49,7 @@ function versionAvif( done ) {
     done();
 }
 
-function javascript(done) {
+function javascript( done ) {
     src('src/js/**/*.js')
         .pipe(dest('build/js'));
 
@@ -58,7 +58,7 @@ function javascript(done) {
 
 function dev(done) {
     watch('src/scss/**/*.scss', css);
-    watch('src/js/**/*.scss', javascript);
+    watch('src/js/**/*.js', javascript);
 
     done();
 }
